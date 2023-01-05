@@ -162,7 +162,7 @@ int main()
 					else if (e.key.code == Keyboard::A) dx = -1;
 					else if (e.key.code == Keyboard::D) dx = 1;
 					else if (e.key.code == Keyboard::Space) drop = true;
-					else if (e.key.code == Keyboard::X) Hold = 1;
+					else if (e.key.code == Keyboard::X || e.key.code == Keyboard::L) Hold = 1;
 				}
 			}
 
@@ -347,7 +347,7 @@ int main()
 					field[k][j] = field[i][j];
 				}
 				if (count < width) k--;
-				else if (count == width)
+				if (count == width)
 					remove_counter++;
 			}
 
@@ -457,29 +457,27 @@ int main()
 			for (int i = 0; i < 4; i++)
 			{
 				s.setTextureRect(IntRect(colorNum_next * 36, 0, 36, 36));
-				s.setPosition(10 + next[i].x * 36, 10 + next[i].y * 36);
+				s.setPosition(next[i].x * 36, next[i].y * 36);
 
 				switch (block_next)
 				{
 				case 0:
-					s.move(448, 130);
+					s.move(448, 135);
 					break;
 				case 1:
 				case 2:
 				case 3:
 				case 4:
 				case 5:
-					s.move(430, 130);
+					s.move(430, 135);
 					break;
 				case 6:
-					s.move(448, 130);
+					s.move(448, 135);
 					break;
 				}
 				window.draw(s);
 			}
 		}
-
-
 
 		window.display();
 	}
