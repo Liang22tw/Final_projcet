@@ -1,9 +1,8 @@
-https://programming727.pixnet.net/blog/post/24606638
+程式來源:https://programming727.pixnet.net/blog/post/24606638
 
 
-
-https://www.youtube.com/watch?v=vkS1fY_UTyg
-
+仿照對象:	tps://www.youtube.com/watch?v=vkS1fY_UTyg		(主要對象)
+		tps://www.youtube.com/watch?v=jcUctrLC-7M
 
 
 
@@ -20,5 +19,5 @@ https://www.youtube.com/watch?v=vkS1fY_UTyg
 9.顯示下一個方塊		//
 10.顯示分數、Level	//
 11.Hold			//
-12.game over後方塊變灰  	//
+12.game over後方塊變灰  //
 13.消行動畫  		X
